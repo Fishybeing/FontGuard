@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "fontguard",
+  "version": "${version}",
+  "name": "FontGuard",
+  "description": "Stops malicious servers from crashing or taking over your game through crafted TrueType fonts in their resource pack. Blocks server-sent .ttf fonts before they reach the native font parser.",
+  "authors": ["matt"],
+  "license": "MIT",
+  "icon": "assets/fontguard/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.fishbowl.fontguard.FontGuardClient"]
+  },
+  "mixins": ["fontguard.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

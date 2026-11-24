@@ -1,0 +1,3 @@
+{
+  "fontguard.blocked": "[FontGuard] Blocked a TrueType font from %s's resource pack (known crash/RCE vector)."
+}

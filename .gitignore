@@ -1,0 +1,10 @@
+.gradle/
+build/
+run/
+*.class
+.idea/
+*.iml
+.vscode/
+testpack/
+testpack.zip
+fontguard-*.jar
