@@ -32,14 +32,6 @@ Most legitimate servers use image-based (bitmap) glyphs for custom text, not
 real `.ttf` files, so this almost never affects normal play. If you trust a
 specific server and want its fonts, add it to the allow list (below).
 
-## Install
-
-1. Minecraft 26.3 with Fabric Loader and Fabric API.
-2. Drop `fontguard-1.0.0.jar` into your `mods` folder next to Fabric API.
-3. Launch. You will see `FontGuard active` in the log.
-
-Share the jar with friends the same way, one file, no setup.
-
 ## Config
 
 A file is created at `.minecraft/config/fontguard.json`:
@@ -56,21 +48,6 @@ A file is created at `.minecraft/config/fontguard.json`:
 - `showWarning` - show a chat line when a font is blocked.
 - `trustedServers` - server addresses whose TrueType fonts you want to allow,
   for example `["play.myfriendserver.net"]`.
-
-## Test it yourself (optional)
-
-`tools/make_testpack.sh` builds a harmless resource pack that contains an
-ordinary system font as a `.ttf` provider and zips it. Point a local test
-server's `resource-pack` at the zip, join with FontGuard installed, and you will
-see the block warning in chat and a `Blocked TrueType font` line in the log. Put
-the same zip in your own `resourcepacks` folder instead and it loads fine, which
-shows FontGuard only blocks the server copy. This uses a normal font and no
-exploit code.
-
-## Versions
-
-Built for Minecraft 26.3. The 26.2 and 1.21.11 ports are a small change away if
-you want them.
 
 ## License
 
