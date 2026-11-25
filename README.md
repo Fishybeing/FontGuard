@@ -32,6 +32,16 @@ Most legitimate servers use image-based (bitmap) glyphs for custom text, not
 real `.ttf` files, so this almost never affects normal play. If you trust a
 specific server and want its fonts, add it to the allow list (below).
 
+## Is this still needed?
+
+Mojang's fix ships as a launcher metadata override (a patched font library), not
+a change to the game itself. If you play through the official launcher on 26.3,
+you are likely already covered. But third-party launchers (Prism, MultiMC,
+modded setups) that cache older version manifests, or have not synced the
+override, can still launch 26.3 with the vulnerable FreeType binary. If that is
+your setup, FontGuard keeps you protected. It will be archived once 26.4 ships as
+a full release with the fix built in.
+
 ## Config
 
 A file is created at `.minecraft/config/fontguard.json`:
